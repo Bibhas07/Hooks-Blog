@@ -1,0 +1,111 @@
+[debug] [2023-09-11T07:14:25.121Z] ----------------------------------------------------------------------
+[debug] [2023-09-11T07:14:25.123Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bibha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-09-11T07:14:25.123Z] CLI Version:   12.5.3
+[debug] [2023-09-11T07:14:25.124Z] Platform:      win32
+[debug] [2023-09-11T07:14:25.124Z] Node Version:  v16.15.1
+[debug] [2023-09-11T07:14:25.125Z] Time:          Mon Sep 11 2023 12:44:25 GMT+0530 (India Standard Time)
+[debug] [2023-09-11T07:14:25.125Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-11T07:14:25.134Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-11T07:14:25.134Z] > authorizing via signed-in user (bibhasjha07@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\bibha\Desktop\webdev\REACT\blog
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-11T07:14:40.379Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-09-11T07:14:41.213Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-09-11T07:14:41.213Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project react-hooks-blog-9c591 (react-hooks-blog) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-09-11T07:14:46.634Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/react-hooks-blog-9c591/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-09-11T07:14:46.634Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/react-hooks-blog-9c591/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/react-hooks-blog-9c591
+[debug] [2023-09-11T07:14:48.586Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/react-hooks-blog-9c591/services/firebasedatabase.googleapis.com 200
+[debug] [2023-09-11T07:14:48.586Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/react-hooks-blog-9c591/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-09-11T07:14:48.587Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/react-hooks-blog-9c591/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-09-11T07:14:48.587Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/react-hooks-blog-9c591/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/react-hooks-blog-9c591
+[debug] [2023-09-11T07:14:50.585Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/react-hooks-blog-9c591/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-09-11T07:14:50.585Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/react-hooks-blog-9c591/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-09-11T07:15:00.588Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/react-hooks-blog-9c591/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-09-11T07:15:00.588Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/react-hooks-blog-9c591/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/react-hooks-blog-9c591
+[debug] [2023-09-11T07:15:02.364Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/react-hooks-blog-9c591/services/firebasedatabase.googleapis.com 200
+[debug] [2023-09-11T07:15:02.364Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/react-hooks-blog-9c591/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-09-11T07:15:02.368Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-hooks-blog-9c591 [none]
+[debug] [2023-09-11T07:15:03.061Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-hooks-blog-9c591 200
+[debug] [2023-09-11T07:15:03.061Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-hooks-blog-9c591 {"projectId":"react-hooks-blog-9c591","projectNumber":"513983268136","displayName":"react-hooks-blog","name":"projects/react-hooks-blog-9c591","resources":{"hostingSite":"react-hooks-blog-9c591"},"state":"ACTIVE","etag":"1_89533fca-8e2e-4c39-bc1a-aa4ad4788704"}
+[debug] [2023-09-11T07:15:10.993Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/react-hooks-blog-9c591/locations/asia-southeast1/instances databaseId=react-hooks-blog-9c591-default-rtdb&validateOnly=true
+[debug] [2023-09-11T07:15:10.993Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/react-hooks-blog-9c591/locations/asia-southeast1/instances {"type":"default_database"}
+[debug] [2023-09-11T07:15:13.009Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/react-hooks-blog-9c591/locations/asia-southeast1/instances 200
+[debug] [2023-09-11T07:15:13.010Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/react-hooks-blog-9c591/locations/asia-southeast1/instances {"name":"projects/513983268136/locations/asia-southeast1/instances/react-hooks-blog-9c591-default-rtdb","project":"projects/513983268136","databaseUrl":"https://react-hooks-blog-9c591-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2023-09-11T07:15:13.011Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/react-hooks-blog-9c591/locations/asia-southeast1/instances databaseId=react-hooks-blog-9c591-default-rtdb
+[debug] [2023-09-11T07:15:13.011Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/react-hooks-blog-9c591/locations/asia-southeast1/instances {"type":"default_database"}
+[debug] [2023-09-11T07:15:15.206Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/react-hooks-blog-9c591/locations/asia-southeast1/instances 200
+[debug] [2023-09-11T07:15:15.206Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/react-hooks-blog-9c591/locations/asia-southeast1/instances {"name":"projects/513983268136/locations/asia-southeast1/instances/react-hooks-blog-9c591-default-rtdb","project":"projects/513983268136","databaseUrl":"https://react-hooks-blog-9c591-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-09-11T07:15:25.881Z] >>> [apiv2][query] GET https://react-hooks-blog-9c591-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-09-11T07:15:27.577Z] <<< [apiv2][status] GET https://react-hooks-blog-9c591-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-09-11T07:15:27.578Z] <<< [apiv2][body] GET https://react-hooks-blog-9c591-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for react-hooks-blog-9c591-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] +  Wrote public/404.html 
+[debug] [2023-09-11T07:15:42.835Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-09-11T07:15:42.937Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-09-11T07:15:42.937Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.3.1","browserURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.3.1/firebase.tgz"},"live":{"version":"10.3","browserURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.3/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.3.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.3.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.3.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.3.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.3.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.3.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.3.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.3.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\bibha\Desktop\webdev\REACT\blog 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=758196425&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-09-11T07:16:03.835Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-09-11T07:16:03.835Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-09-11T07:16:04.209Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-09-11T07:16:04.209Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-09-11T07:16:04.221Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-09-11T07:16:04.582Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-09-11T07:16:04.582Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Bibhas07","id":114753303,"node_id":"U_kgDOBtb_Fw","avatar_url":"https://avatars.githubusercontent.com/u/114753303?v=4","gravatar_id":"","url":"https://api.github.com/users/Bibhas07","html_url":"https://github.com/Bibhas07","followers_url":"https://api.github.com/users/Bibhas07/followers","following_url":"https://api.github.com/users/Bibhas07/following{/other_user}","gists_url":"https://api.github.com/users/Bibhas07/gists{/gist_id}","starred_url":"https://api.github.com/users/Bibhas07/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Bibhas07/subscriptions","organizations_url":"https://api.github.com/users/Bibhas07/orgs","repos_url":"https://api.github.com/users/Bibhas07/repos","events_url":"https://api.github.com/users/Bibhas07/events{/privacy}","received_events_url":"https://api.github.com/users/Bibhas07/received_events","type":"User","site_admin":false,"name":"Bibhas07-main","company":"Capgemini","blog":"","location":null,"email":null,"hireable":true,"bio":"🌱 When I'm not crafting code, you can find me on valorant. I believe in the power of open-source collaboration and contributing back to the community .","twitter_username":null,"public_repos":9,"public_gists":0,"followers":0,"following":0,"created_at":"2022-09-30T13:57:06Z","updated_at":"2023-08-09T17:52:51Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":157,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Bibhas07 
+[info] 
+[debug] [2023-09-11T07:16:21.920Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-09-11T07:16:22.242Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-09-11T07:16:22.243Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
